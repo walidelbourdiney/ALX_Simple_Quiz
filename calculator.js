@@ -37,3 +37,9 @@ multiplyButton.addEventListener("click", function () {
   const result = multiply(number1, number2);
   calculationResult.textContent = result;
 });
+divideButton.addEventListener("click", function () {
+  const number1 = parseFloat(number1Input.value) || 0;
+  const number2 = parseFloat(number2Input.value) || 0;
+  const result = divide(number1, number2);
+  calculationResult.textContent = result;
+});
